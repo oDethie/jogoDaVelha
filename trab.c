@@ -171,7 +171,7 @@ client (readfd, writefd) //PAI
                         printf("\033[1;33m\t-\033[0m  ");
                     }
                     //if(cartas[i][j] == 0) printf("\t0  ", cartas[i][j]);
-                    else printf("\t0  ", cartas[i][j]);
+                    else printf("\t%c  ", cartas[i][j]);
                 }
                 printf("\t-> %d\n\n", (i+1));
             }
@@ -364,7 +364,7 @@ int readfd, // leitura do pipe1[0]
                 for(j = 0; j < 8; j++){
                     if(cartas[i][j] == '9') printf("\033[1;33m\t-\033[0m  ");
                     //if(cartas[i][j] == 0) printf("\t0  ", cartas[i][j]);
-                    else printf("\t0  ", cartas[i][j]);
+                    else printf("\t%c  ", cartas[i][j]);
                 }
                 printf("\t-> %d\n\n", (i+1));
             }
